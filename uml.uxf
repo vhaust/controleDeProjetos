@@ -65,7 +65,7 @@ m1=tipo</panel_attributes>
       <x>280</x>
       <y>210</y>
       <w>210</w>
-      <h>140</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Colaborador
 --
@@ -74,7 +74,6 @@ m1=tipo</panel_attributes>
 +nascimento: Date
 +remuneracao: float
 +email: String
-+endereco: String
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -82,7 +81,7 @@ m1=tipo</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>480</x>
-      <y>290</y>
+      <y>270</y>
       <w>150</w>
       <h>40</h>
     </coordinates>
@@ -94,7 +93,7 @@ m1=sexo</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>610</x>
-      <y>260</y>
+      <y>240</y>
       <w>210</w>
       <h>80</h>
     </coordinates>
@@ -141,13 +140,13 @@ m1=telefone</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>370</x>
-      <y>340</y>
+      <y>320</y>
       <w>90</w>
-      <h>100</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=endereco</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
