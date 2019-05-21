@@ -127,7 +127,14 @@ m1=telefone</panel_attributes>
     </coordinates>
     <panel_attributes>Endereco
 --
-</panel_attributes>
++tipo: String
++nome: String
++numero: int
++complemento: String
++bairro: String
++cep: String
++cidade: String
++estado: String</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
