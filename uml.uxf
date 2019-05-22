@@ -160,7 +160,7 @@ m1=endereco</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>54</x>
-      <y>648</y>
+      <y>657</y>
       <w>189</w>
       <h>36</h>
     </coordinates>
@@ -174,10 +174,10 @@ m1=endereco</panel_attributes>
       <x>234</x>
       <y>558</y>
       <w>135</w>
-      <h>126</h>
+      <h>135</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>130.0;10.0;10.0;120.0</additional_attributes>
+    <additional_attributes>130.0;10.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -215,10 +215,10 @@ m1=situacao
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>54</x>
+      <x>9</x>
       <y>477</y>
-      <w>189</w>
-      <h>108</h>
+      <w>234</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>Departamento
 --
@@ -227,7 +227,8 @@ m1=situacao
 +orcamento: long
 +email: String
 +telefone: Telefone
-</panel_attributes>
+--
++getOrcamentoDeProjetos(): long</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -300,7 +301,7 @@ r2=0..*</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>135</x>
-      <y>576</y>
+      <y>585</y>
       <w>72</w>
       <h>90</h>
     </coordinates>
