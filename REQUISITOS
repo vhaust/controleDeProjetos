@@ -54,3 +54,7 @@ estão ou estiveram alocados a um projeto em determinado período;
 
 13. O sistema deverá ser capaz de verificar se os orçamentos do
 projetos não ultrapassam o orçamento do departamento.
+
+Observações:
+
+- O projeto não necessita de persistência de dados.
