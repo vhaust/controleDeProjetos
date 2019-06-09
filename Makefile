@@ -7,6 +7,7 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
+	$(SOURCEPATH)/$(PACKAGE)/model/EstadoAlocacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Mobilidade.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Situacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Endereco.java \
