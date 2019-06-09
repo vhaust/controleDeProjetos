@@ -7,6 +7,7 @@ JC = javac
 	$(JC) $(JFLAGS) $*.java
 
 CLASSES = \
+	$(SOURCEPATH)/$(PACKAGE)/model/Sexo.java \
 	$(SOURCEPATH)/Main.java
 
 default: compile
