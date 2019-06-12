@@ -12,6 +12,7 @@ CLASSES = \
 	$(SOURCEPATH)/$(PACKAGE)/model/Mobilidade.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Situacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Endereco.java \
+	$(SOURCEPATH)/$(PACKAGE)/model/Alocacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Sexo.java \
 	$(SOURCEPATH)/Main.java
 
