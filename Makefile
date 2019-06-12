@@ -17,6 +17,7 @@ CLASSES = \
 	$(SOURCEPATH)/$(PACKAGE)/model/AlteracaoSituacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Projeto.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Endereco.java \
+	$(SOURCEPATH)/$(PACKAGE)/model/Alocacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Sexo.java \
 	$(SOURCEPATH)/Main.java
 
