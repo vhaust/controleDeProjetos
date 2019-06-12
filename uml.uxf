@@ -374,7 +374,7 @@ Encerrada</panel_attributes>
     </coordinates>
     <panel_attributes>Alocacao
 --
-cargaHoraria: int</panel_attributes>
++cargaHoraria: int</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
