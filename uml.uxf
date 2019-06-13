@@ -251,7 +251,7 @@ m1=situacao
       <w>189</w>
       <h>90</h>
     </coordinates>
-    <panel_attributes>AlteracaoAndamento
+    <panel_attributes>AlteracaoSituacao
 --
 +data: Date
 +motivo: String
