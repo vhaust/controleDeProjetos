@@ -5,7 +5,7 @@
     <coordinates>
       <x>81</x>
       <y>0</y>
-      <w>513</w>
+      <w>612</w>
       <h>162</h>
     </coordinates>
     <panel_attributes>Projeto
@@ -18,7 +18,7 @@
 -situacao: Situacao = Andamento
 --
 +getSituacao(): Situacao
-+mudarSituacao(situacao: Situacao, dataMudanca: Date, agente: Colaborador)
++mudarSituacao(situacao: Situacao, dataMudanca: Date, agente: Colaborador, motivo: String)
 +toString(): String
 
 </panel_attributes>
