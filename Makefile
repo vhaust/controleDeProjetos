@@ -11,6 +11,7 @@ CLASSES = \
 	$(SOURCEPATH)/$(PACKAGE)/model/EstadoAlocacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Mobilidade.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Colaborador.java \
+	$(SOURCEPATH)/$(PACKAGE)/model/Departamento.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Gerente.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Situacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/AlteracaoSituacao.java \
