@@ -15,7 +15,7 @@ public class Departamento
 	private ArrayList<Colaborador> colaboradores;
 	private ArrayList<Projeto> projetos;
 
-	public boolean addColaborador(colaborador Colaborador)
+	public boolean addColaborador(Colaborador colaborador)
 	{
 
 	}
