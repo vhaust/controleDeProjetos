@@ -126,7 +126,7 @@ Masculino</panel_attributes>
     <panel_attributes>lt=&lt;-
 m1=telefone
 r1=0..*
-r2=1</panel_attributes>
+</panel_attributes>
     <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
@@ -155,15 +155,14 @@ r2=1</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>567</x>
-      <y>504</y>
+      <y>513</y>
       <w>135</w>
-      <h>63</h>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=endereco
-r2=1
 r1=1</panel_attributes>
-    <additional_attributes>130.0;40.0;10.0;20.0</additional_attributes>
+    <additional_attributes>130.0;30.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
