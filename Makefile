@@ -10,6 +10,7 @@ CLASSES = \
 	$(SOURCEPATH)/$(PACKAGE)/model/Telefone.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/EstadoAlocacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Mobilidade.java \
+	$(SOURCEPATH)/$(PACKAGE)/model/Colaborador.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Situacao.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Endereco.java \
 	$(SOURCEPATH)/$(PACKAGE)/model/Sexo.java \
