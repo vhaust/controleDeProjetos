@@ -10,6 +10,16 @@ public class AlteracaoSituacao
 	private Situacao anterior;
 	private Situacao novo;
 
+	public AlteracaoSituacao(Situacao anterior, Situacao novo, Date data,
+	                         Colaborador agente, String motivo)
+	{
+		this.data = data;
+		this.motivo = motivo;
+		this.agente = agente;
+		this.anterior = anterior;
+		this.novo = novo;
+	}
+
 	public Colaborador getAgente()
 	{
 		return agente;
