@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
   <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>81</x>
       <y>0</y>
-      <w>513</w>
+      <w>612</w>
       <h>162</h>
     </coordinates>
     <panel_attributes>Projeto
@@ -18,7 +19,7 @@
 -situacao: Situacao = Andamento
 --
 +getSituacao(): Situacao
-+mudarSituacao(situacao: Situacao, dataMudanca: Date, agente: Colaborador)
++mudarSituacao(situacao: Situacao, dataMudanca: Date, agente: Colaborador, motivo: String)
 +toString(): String
 
 </panel_attributes>
@@ -27,8 +28,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>684</x>
-      <y>423</y>
+      <x>639</x>
+      <y>306</y>
       <w>189</w>
       <h>72</h>
     </coordinates>
@@ -43,8 +44,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>684</x>
-      <y>297</y>
+      <x>711</x>
+      <y>90</y>
       <w>189</w>
       <h>72</h>
     </coordinates>
@@ -59,20 +60,20 @@ Movel
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>774</x>
-      <y>360</y>
+      <x>801</x>
+      <y>153</y>
       <w>45</w>
-      <h>81</h>
+      <h>171</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=tipo</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>387</x>
-      <y>459</y>
+      <x>414</x>
+      <y>450</y>
       <w>189</w>
       <h>126</h>
     </coordinates>
@@ -91,20 +92,20 @@ m1=tipo</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>477</x>
-      <y>576</y>
+      <x>504</x>
+      <y>567</y>
       <w>54</w>
-      <h>126</h>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=sexo</panel_attributes>
-    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>360</x>
-      <y>684</y>
+      <x>441</x>
+      <y>621</y>
       <w>189</w>
       <h>72</h>
     </coordinates>
@@ -118,22 +119,22 @@ Masculino</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
-      <y>450</y>
-      <w>135</w>
-      <h>45</h>
+      <x>594</x>
+      <y>369</y>
+      <w>108</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=telefone
 r1=0..*
 </panel_attributes>
-    <additional_attributes>130.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>50.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>684</x>
-      <y>513</y>
+      <x>702</x>
+      <y>405</y>
       <w>198</w>
       <h>162</h>
     </coordinates>
@@ -154,20 +155,20 @@ r1=0..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
-      <y>513</y>
-      <w>135</w>
-      <h>54</h>
+      <x>594</x>
+      <y>522</y>
+      <w>126</w>
+      <h>45</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=endereco
 r1=1</panel_attributes>
-    <additional_attributes>130.0;30.0;10.0;10.0</additional_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>54</x>
+      <x>243</x>
       <y>657</y>
       <w>189</w>
       <h>36</h>
@@ -179,13 +180,13 @@ r1=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>234</x>
-      <y>576</y>
-      <w>171</w>
-      <h>117</h>
+      <x>414</x>
+      <y>567</y>
+      <w>27</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>170.0;10.0;10.0;110.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -225,8 +226,8 @@ m1=situacao
     <coordinates>
       <x>0</x>
       <y>450</y>
-      <w>288</w>
-      <h>144</h>
+      <w>369</w>
+      <h>189</h>
     </coordinates>
     <panel_attributes>Departamento
 --
@@ -238,6 +239,8 @@ m1=situacao
 --
 +getOrcamentoDeProjetos(): long
 +getProjetos(situacao: Situacao): Projeto [*]
++addColaborador(colaborador: Colaborador): boolean
++removeColaborador(colaborador: Colaborador): boolean
 +podeAdicionar(projeto: Projeto): boolean
 +toString(): String</panel_attributes>
     <additional_attributes/>
@@ -314,27 +317,27 @@ r2=0..*</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>126</x>
-      <y>585</y>
-      <w>72</w>
-      <h>90</h>
+      <y>630</y>
+      <w>135</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=gerente
 r1=1</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>130.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>279</x>
-      <y>495</y>
-      <w>126</w>
+      <x>360</x>
+      <y>486</y>
+      <w>72</w>
       <h>45</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..n
-m2=1..*</panel_attributes>
-    <additional_attributes>120.0;20.0;10.0;10.0</additional_attributes>
+r2=1..*</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -373,7 +376,7 @@ Encerrada</panel_attributes>
     </coordinates>
     <panel_attributes>Alocacao
 --
-cargaHoraria: int</panel_attributes>
++cargaHoraria: int</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -390,21 +393,21 @@ cargaHoraria: int</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>450</x>
+      <x>477</x>
       <y>387</y>
       <w>45</w>
-      <h>90</h>
+      <h>81</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1
 m2=1..*</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>684</x>
-      <y>720</y>
+      <x>702</x>
+      <y>621</y>
       <w>189</w>
       <h>45</h>
     </coordinates>
@@ -416,13 +419,26 @@ m2=1..*</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>774</x>
-      <y>666</y>
+      <x>792</x>
+      <y>558</y>
       <w>45</w>
-      <h>72</h>
+      <h>81</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..*</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>702</y>
+      <w>189</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>EnderecosConhecidos
+--
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
