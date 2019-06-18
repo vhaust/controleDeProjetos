@@ -14,6 +14,18 @@ public class Projeto
 	private Departamento departamentoResponsavel;
 	private ArrayList<AlteracaoSituacao> historia;
 
+	public Projeto(String nome, Date inicio, Date conclusao, long orcamento,
+	               String descricao, Departamento departamentoResponsavel)
+	{
+		this.nome = nome;
+		this.situacao = Situacao.ANDAMENTO;
+		this.inicio = inicio;
+		this.conclusao = conclusao;
+		this.orcamento = orcamento;
+		this.descricao = descricao;
+		this.departamentoResponsavel = departamentoResponsavel;
+	}
+
 	public ArrayList<AlteracaoSituacao> getHistoria()
 	{
 		return historia;

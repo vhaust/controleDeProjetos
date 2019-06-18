@@ -3,7 +3,6 @@ package br.com.ap220191.ec04_controle_projetos.model;
 import java.util.Date;
 import java.util.ArrayList;
 
-//TODO: implementar métodos
 public class Departamento
 {
 	private String nome;
@@ -15,29 +14,53 @@ public class Departamento
 	private ArrayList<Colaborador> colaboradores;
 	private ArrayList<Projeto> projetos;
 
-	public boolean addColaborador(Colaborador colaborador)
+	public void addColaborador(Colaborador colaborador)
 	{
-
+		colaboradores.add(colaborador);
 	}
 
-	public boolean removeColaborador(Colaborador colaborador)
+	public void removeColaborador(Colaborador colaborador)
 	{
+		colaboradores.remove(colaborador);
+	}
 
+	public void addProjeto(Projeto projeto)
+	{
+		this.projetos.add(projeto);
+	}
+
+	public void removeProjeto(Projeto projeto)
+	{
+		projetos.remove(projeto);
 	}
 
 	public long getOrcamentoDeProjetos()
 	{
-
+		long orcamentoProjetos = 0;
+		for(Projeto projeto : projetos)
+		{
+			orcamentoProjetos += projeto.getOrcamento();
+		}
+		return orcamentoProjetos;
 	}
 
 	public ArrayList<Projeto> getProjetos(Situacao situacao)
 	{
-
+		ArrayList<Projeto> projetosRetorno = new ArrayList<>();
+		for(Projeto projeto : projetos)
+		{
+			if(projeto.getSituacao().equals(situacao))
+			{
+				projetosRetorno.add(projeto);
+			}
+		}
+		return projetosRetorno;
 	}
 
 	public boolean podeAdicionar(Projeto projeto)
 	{
-
+		return projeto.getOrcamento()
+			<= this.orcamento - getOrcamentoDeProjetos();
 	}
 
 	public ArrayList<Projeto> getProjetos()
